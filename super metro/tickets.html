@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Super-Metro-Logo.jpg" type="image/x-icon">
+	<title>Super Metro - Buy a Ticket</title>
+  <style>
+  body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  }
+ .metro{
+    height: 60vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Super-Metro-Logo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .logo{
+    color: orangered;
+  }
+  span{
+    color:blue
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a :hover{
+    color: yellow;
+    transition: 3s;
+  }
+  button{
+    border: none;
+    background: orangered;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: .4s;
+  }
+  button:hover{
+    transition: scale(1.3);
+    cursor: pointer;
+    color: black;
+  }
+  .top{
+    background-color: orangered;
+  }
+  .bottom{
+    background-color: orangered;
+  }
+  table {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        }
+
+        th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #0804fa;
+        }
+
+        th {
+        background-color: #ff0707;
+        font-weight: bold;
+        }
+        .ticket{
+          padding: 20px;
+        }
+  </style>
+</head>
+<body>
+  <?php require 'nav.php'; ?>
+	
+  <table>
+    <tr>
+      <th>Town</th>
+      <th>Fare</th>
+    </tr>
+    <tr>
+      <td>Nairobi</td>
+      <td>$5.00</td>
+    </tr>
+    <tr>
+      <td>Mombasa</td>
+      <td>$7.50</td>
+    </tr>
+    <tr>
+      <td>Kisumu</td>
+      <td>$10.00</td>
+    </tr>
+    <tr>
+      <td>Eldoret</td>
+      <td>$12.50</td>
+    </tr>
+    <tr>
+      <td>Busia</td>
+      <td>$15.00</td>
+    </tr>
+  </table>
+
+ <div class="ticket">
+   <h1>Buy Your Ticket Here</h1>
+    <form style="color: orangered;">
+      <label for="from">From:</label>
+      <input type="text" id="from" name="from"><br><br>
+
+      <label for="to">To:</label>
+      <input type="text" id="to" name="to"><br><br>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date"><br><br>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time"><br><br>
+
+      <label for="seats">Number of Seats:</label>
+      <input type="number" id="seats" name="seats" min="1" max="10"><br><br>
+
+      <input type="submit" value="Buy Ticket"> <br><br>
+    </form>
+  </div>
+
+  <footer>
+    <?php require 'footer.php'; ?>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{
+    background-image: url(background.jpg);
+}
+.logo{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.nav{
+    color: white;
+    background-color: rgb(98, 90, 90);
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20px;
+    margin:auto;
+    padding:10px;
+    width: 1024px;
+    opacity: 50%;
+    
+}
+.h1{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 80px;
+}
+.p1{
+    color: white;
+    text-align: center;
+}
+.maps{
+    text-align: center;
+}
+.footer{
+    color: white;
+    background-color: rgb(98, 90, 90);
+    width: 1024px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    opacity: 50%;   
+}

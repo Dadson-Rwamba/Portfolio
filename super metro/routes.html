@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Super-Metro-Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="routes.css">
+    <title>Super Metro Routes</title>
+    <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+ }
+ .metro{
+    height: 70vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Super-Metro-Logo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .logo{
+    color: orangered;
+  }
+  span{
+    color:blue
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a :hover{
+    color: yellow;
+    transition: 3s;
+  }
+  button{
+    border: none;
+    background: orangered;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: .4s;
+  }
+  button a{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+  }
+  button:hover a{
+    transition: scale(1.3);
+    cursor: pointer;
+    color: blue;
+  }
+  .flexdesc{
+    background-color: orangered;
+  }
+  .bottom{
+    background-color: orangered;
+  } 
+
+    </style>
+</head>
+<body>
+<?php require 'nav.php'; ?>
+    
+    <div class="flexdesc">
+    <p>
+        <h1>
+            This are the routes that are currently available 
+        </h1>
+    </p>
+        <img src="skyline-nairobi-kenya.avif" alt="..." height="700" width="700">
+        <p>
+            <h3> Nairobi</h3>
+           Nairobi is the capital and largest city of Kenya, a country located in East Africa. The city has a population of approximately 4.5 million people and is a major economic and cultural center in the region. Nairobi is known for its bustling markets, lively nightlife, and rich history, as well as its proximity to natural attractions like Nairobi National Park and the Maasai Mara game reserve. The city is also home to many international organizations and institutions, including the United Nations Environment Programme (UNEP) and the International Criminal Court (ICC).
+        </p>
+    
+        <img src="Mombasa Town.jpg" alt="..." height="700" width="700">
+        <p>
+            <h3>Mombasa</h3>
+            Mombasa is a coastal city located in southeastern Kenya, on the Indian Ocean. It is the second-largest city in the country after Nairobi and has a population of approximately 1.2 million people. Mombasa is an important economic hub and port city, serving as the gateway to East Africa for international trade. The city has a rich history, having been a major center of trade and commerce for centuries. It was ruled by the Portuguese, the Arabs, and the British at different times in history, and this has influenced its culture and architecture. Mombasa is also a popular tourist destination, with its beautiful beaches, historic sites, and diverse marine life attracting visitors from around the world.
+        </p>
+    
+        <img src="Kisumu-City.jpg" alt="..." height="700" width="700">
+        <p>
+            <h3>Kisumu</h3>
+            Kisumu is a port city located in western Kenya, on the eastern shore of Lake Victoria, which is the largest freshwater lake in Africa and the second-largest freshwater lake in the world. With a population of approximately 500,000 people, Kisumu is the third-largest city in Kenya. The city serves as a major commercial and transportation hub, connecting Kenya with other countries in East Africa. Kisumu is also known for its rich cultural heritage and history, having been a center of trade and commerce for centuries. The city is home to several museums and cultural institutions, including the Kisumu Museum, which showcases the region's history and culture. The lakefront area of Kisumu is a popular destination for tourists, offering beautiful views of Lake Victoria and a range of recreational activities.
+        </p>
+    
+        <img src="Eldoret home of champions.jpg" alt="..." height="700" width="700">
+        <p>
+            <h3>Eldoret</h3>
+            Eldoret is a city located in western Kenya, in the Uasin Gishu County. It has a population of approximately 500,000 people and is the fifth-largest city in Kenya. Eldoret is a major center of agriculture, commerce, and education in the region. The city is located in the fertile Rift Valley and is known for its large-scale production of maize, wheat, and other crops. It is also home to several universities and educational institutions, including Moi University and Eldoret Polytechnic. Eldoret is a popular destination for athletes, as it is located at an altitude of over 2,100 meters, making it an ideal location for high-altitude training. The city has produced many world-class long-distance runners, including several Olympic champions.
+        </p>
+    
+        <img src="Busia Boarder.jpg" alt="..." height="700" width="700">
+        <p>
+            <h3>Busia</h3>
+            Busia is a town located in western Kenya, near the border with Uganda. It is the capital of Busia County and has a population of approximately 64,000 people. Busia is an important commercial center, serving as a gateway to Uganda and other countries in East Africa. The town is located on the busy highway connecting Nairobi to Kampala, the capital of Uganda, and is a major transportation hub for goods and people. Busia is also known for its vibrant markets, where a wide variety of goods are sold, including fresh produce, clothing, and electronics. The town is situated on the shores of Lake Victoria and is home to several beaches and other recreational areas. <br>
+        </p>
+    </div>
+
+
+    <footer>
+        <?php require 'footer.php'; ?>
+    </footer>    
+</body>
+</html>

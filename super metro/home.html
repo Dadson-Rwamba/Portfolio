@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Super-Metro-Logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="home.css">
+  <title>Super Metro</title>
+  <style>
+    *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+ }
+ .metro{
+    height: 70vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Super-Metro-Logo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .logo{
+    color: orangered;
+  }
+  span{
+    color:blue
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a :hover{
+    color: yellow;
+    transition: 3s;
+  }
+  button{
+    border: none;
+    background: orangered;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: .4s;
+  }
+  button a{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+  }
+  button:hover a{
+    transition: scale(1.3);
+    cursor: pointer;
+    color: blue;
+  }
+  .top{
+    background-color: orangered;
+  }
+  .bottom{
+    background-color: orangered;
+  } 
+  </style>
+</head>
+<body>
+    <?php require 'nav.php'; ?>
+  
+  <main>
+  <div class="top">
+    <h1>
+      Welcome To Super Metro Bus Company. <br>
+    </h1>
+    <p>
+      We provide safe and reliable bus transportation to destinations across the country. <br><br>
+    </p>
+
+    <section>
+      <h2>Our Services</h2>
+      
+      <p>
+        <ul>
+          <li>Comfortable seating</li>
+          <li>On-time departures and arrivals</li>
+          <li>Free Wi-Fi and charging ports</li>
+          <li>Refreshments available for purchase</li>
+        </ul>
+      </p>
+    </section>
+  </div>
+  <div class="bottom">
+    <section>
+      <h2>Popular Routes</h2>
+      <ul>
+        <li>Nairobi to Mombasa</li>
+        <li>Nairobi to Kisumu</li>
+        <li>Nairobi to Eldoret</li>
+        <li>Nairobi to Busia</li><br>
+      </ul>
+      <p>Check our <span class="Routes"><a href="routes.php">Routes</a></span> page for a full list of destinations.</p><br>
+    </section>
+    </main>
+  </div> 
+  
+
+  <!-- Footer -->
+  <footer>
+    <?php require 'footer.php'; ?>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Super-Metro-Logo.jpg" type="image/x-icon">   
+    <link rel="stylesheet" href="index1.css">
+    <title>Super Metro</title>
+    <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+ }
+ .metro{
+    height: 70vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Super-Metro-Logo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .logo{
+    color: orangered;
+  }
+  span{
+    color:blue
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a :hover{
+    color: yellow;
+    transition: 3s;
+  }
+  button{
+    border: none;
+    background: orangered;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: .4s;
+  }
+  .button a{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+  }
+  button:hover a{
+    transition: scale(1.3);
+    cursor: pointer;
+    color: blue;
+  }
+  .top{
+    background-color: orangered;
+  }
+  .bottom{
+    background-color: orangered;
+  } 
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  text-align:center;
+  }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Super-Metro-Logo.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: orangered;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(4, 21, 252, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+    flex: overline 3px;
+    color: orangered;
+    text-align: justify;
+    margin-bottom: 1px;
+}
+
+label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 40px;
+    border: none;
+    background-color: #f2f2f2;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="h1">
+        <h1>
+            WELCOME TO SUPER METRO BUS 
+        </h1>
+        <p>
+            <h2>
+                Please register for first time users and Then Login.
+            </h2> 
+        </p>
+    </div>
+        <div>
+            <nav>
+                <button><a href="register.php">Register</a></button><br><br><br>
+                <button><a href="login.php">Login</a></button>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

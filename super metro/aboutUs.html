@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Super-Metro-Logo.jpg" type="image/x-icon">
+    <title>About Super Metro</title>
+    <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+ }
+ .metro{
+    height: 70vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Super-Metro-Logo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .logo{
+    color: orangered;
+  }
+  span{
+    color:blue
+  }
+  nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 10px 20px;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a :hover{
+    color: yellow;
+    transition: 3s;
+  }
+  button{
+    border:none;
+    background: orangered;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: .4s;
+  }
+  button a{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+  }
+  button a:hover{
+    transition: scale(1.3);
+    cursor: pointer;
+    color: blue;
+  }
+  .top{
+    background-color: orangered;
+  }
+  .bottom{
+    background-color: blue;
+  }
+  div{
+    background-color: orangered;
+    padding: 40px;
+  }
+  
+  
+        
+    </style>
+</head>
+<body>
+  <?php require 'nav.php'; ?>
+    <div>
+        <h2>
+            About Super Metro <br>
+        </h2>
+        <p>
+            Super Metro is a bus company that provides reliable and efficient transportation services to passengers across various destinations. With its modern fleet of buses, Super Metro ensures that passengers travel in comfort and style. The company prioritizes safety and adheres to strict regulations to guarantee the well-being of its passengers. Super Metro is committed to providing exceptional customer service, with its friendly and professional staff always ready to assist passengers. Whether commuting to work, traveling for leisure, or running errands, Super Metro offers affordable fares and convenient schedules to meet the diverse needs of its customers. Overall, Super Metro is a trusted and reputable bus company that strives to exceed the expectations of its passengers.
+        </p>
+    </div>
+  <footer>
+    <?php require 'footer.php'; ?>
+  </footer>
+</body>
+</html>

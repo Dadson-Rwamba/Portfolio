@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Super-Metro-Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="services.css">
+    <link rel="shortcut icon" href="Super-Metro-Logo.jpeg" type="image/x-icon">
+    <title>Super Metro Services</title> 
+    <style>
+        *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+ }
+ .metro{
+    height: 70vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Super-Metro-Logo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .logo{
+    color: orangered;
+  }
+  span{
+    color:blue
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a :hover{
+    color: yellow;
+    transition: 3s;
+  }
+  button{
+    border: none;
+    background: orangered;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: .4s;
+  }
+  button a{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+  }
+  button:hover a{
+    transition: scale(1.3);
+    cursor: pointer;
+    color: blue;
+  }
+  .top{
+    background-color: orangered;
+  }
+  .bottom{
+    background-color: orangered;
+  } 
+    </style>
+</head>
+<body>
+  <?php require 'nav.php'; ?>
+    <div class="top">
+      <h1>
+          Welcome On Board
+      </h1>
+        <p>
+            Whether you are organising your annual company event with 400 employees or arranging a school trip for 30 children the transport is often the beginning and end of your event. We understand the importance of this and are happy to contribute to your event by making coach or minibus transport easy and carefree for you and your group.
+
+            We can cater to all occasions and group sizes. With vehicles starting from 4 seater people carriers, 16 seater minibuses, 24 seater mini-coaches all the way up to 72 seater coaches. If you have more, we can always assign a double decker coach and use multiple vehicles.
+
+            Super Metro Limited has provided transportation for all types of occasions and events such as birthday parties, weddings, sports events, corporate events, group tours, school trips, stag/hen parties, day trips and more. Based in Kenya Nairobi, we know a thing or two about the yearly events this country has to offer. We have provided coach hire and minibus hire for The Royal Ascot, Wimbledon, The Golf Open, The Olympics, Cheltenham Races, Newmarket Races, Football Matches, Wireless Festival, Glastonbury, We Are Fstvl, Creamfields Festival to name a few.
+
+            Coach hire and minibus hire should be affordable. We offer cheap coach hire and minibus hire and do not compromise on quality. Contact us today by calling us, emailing us or take out a quote on website for a free quotation. Should you be happy to book, we will secure your booking and you won't need to worry about a thing until the day you travel. <br><br>
+        </p>
+        <p>
+          <h1>
+            Our buses
+          </h1>
+    </div>      
+          <div class="gallery">
+                <img src="Super Metro interior.jpeg" alt="Cinque Terre" width="700" height="700">
+              </a>
+
+
+                <img src="Front View super metro.jpg" alt="Forest" width="700" height="700">
+              </a>
+
+
+                <img src="Side View Super Metro.jpeg" alt="Northern Lights" width="700" height="700">
+              </a>
+
+                <img src="Rear view super metro.webp" alt="Mountains" width="700" height="700">
+              </a>
+          </div>
+        </p>
+</body>
+</html> 
+      <footer>
+        <?php require 'footer.php'; ?>
+      </footer>
+</html>
